@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ header nav{
+    background-color: rgb(202, 5, 15);
+    height: 50px;
+    /* display: flex; */
+    /* justify-content:center; */
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    position: relative;
+    left: 40%;
+
+}
+header nav ul li{
+    list-style: none;
+    padding: 10px;
+    color:black;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+}
+header ul li:hover{
+    font-size: larger;
+    font-weight: bolder;
+}
+header nav ul img{
+    position: relative;
+    right: 210%;
+    top: 5px;
+}
+main{
+    height:500px;
+    width: 100%;
+    background-color: rgb(245, 191, 191);
+    display: flex;
+}
+
+body{
+    border: 60px solid rgb(250, 4, 45);
+
+}
+main .shadow{
+    height: 500px;
+}
+main .shadow img{
+    height: 400px;
+    width: 400px;
+    margin: 10px 0px 0px 10px;
+    opacity: 0.2;
+} 
+/* .content{
+    height: 700px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.content h1{
+    margin: 60px 0px 0px 40px;
+    font-family: "Kanit", sans-serif;
+    font-size: 50px;
+}
+.cover img{
+    height: 400px;
+    width: 400px;
+    margin: 30px 0px 0px 40px;
+
+}
+.batch{
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: relative;
+    left: 30%;
+    border-radius: 8px;
+    font-family: "Fira Sans", sans-serif;
+    
+}
+.content h2{
+    position: relative;
+    left: 13%;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+.content p{
+    position: relative;
+    top: 3%;
+    left: 10%;
+    text-align: center;
+}
+.buttons{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.content button{
+    height: 40px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    position: relative;
+    left: 80px;
+    top: 40px;
+    border-radius: 8px;
+    border: 5px thick double white;
+    font-family: "Rubik", sans-serif;
+
+    transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.buttons button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.buttons button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
